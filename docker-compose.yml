@@ -1,0 +1,6 @@
+services:
+  expense-tracker:
+    build: .
+    ports:
+      - "${PORT:-10101}:80"
+    container_name: expense-tracker-container

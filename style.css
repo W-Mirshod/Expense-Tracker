@@ -1,0 +1,216 @@
+body {
+  background: #f6f8fa;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+}
+body.dark {
+  background: #181c24;
+  color: #f6f8fa;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  color: #222;
+  padding: 0.7rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-radius: 0 0 14px 14px;
+  min-height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+body.dark .navbar {
+  background: #23272f;
+  color: #f6f8fa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.18rem;
+  letter-spacing: 0.5px;
+  margin-right: 1.2rem;
+}
+.navbar-title {
+  font-size: 1.08rem;
+  opacity: 0.85;
+  flex: 1;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.35rem;
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  margin-left: 1.2rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s;
+}
+.theme-toggle:active {
+  background: #e6e6e6;
+}
+body.dark .theme-toggle:active {
+  background: #2d3440;
+}
+.container {
+  max-width: 420px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+}
+body.dark .container {
+  background: #23272f;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+input, button {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+body.dark input, body.dark button {
+  background: #23272f;
+  color: #f6f8fa;
+  border: 1px solid #444;
+}
+button[type="submit"] {
+  background: #2d7ff9;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  margin-bottom: 0;
+  transition: background 0.2s;
+}
+button[type="submit"]:hover {
+  background: #1a5fd0;
+}
+.summary {
+  margin: 1.2rem 0 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: right;
+}
+#expense-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#expense-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0.2rem;
+  border-bottom: 1px solid #ececec;
+}
+body.dark #expense-list li {
+  border-bottom: 1px solid #333;
+}
+body {
+    background: #f4f6fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px 24px 24px;
+}
+h1 {
+    text-align: center;
+    color: #2d3a4a;
+    margin-bottom: 24px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+#expense-form input, #expense-form button {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+#expense-form button {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#expense-form button:hover {
+    background: #2563eb;
+}
+.summary {
+    text-align: right;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    color: #374151;
+}
+#expense-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#expense-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 1rem;
+}
+#expense-list li:last-child {
+    border-bottom: none;
+}
+.expense-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.expense-name {
+    color: #1e293b;
+    font-weight: 500;
+}
+.expense-date {
+    color: #64748b;
+    font-size: 0.9em;
+}
+.expense-amount {
+    color: #ef4444;
+    font-weight: 600;
+    margin-right: 16px;
+}
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.15s;
+}
+.delete-btn:hover {
+    background: #fee2e2;
+}
