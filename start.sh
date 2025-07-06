@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo "Starting TODO App on port $PORT"
-export PORT=10101
-echo "Starting Expense Tracker on port $PORT"
+echo "Starting Expense Tracker"
 
 # Check if docker-compose or docker compose is available
 if command -v docker-compose &> /dev/null; then
@@ -22,5 +20,4 @@ $DOCKER_COMPOSE_CMD down
 # Build and run the container in detached mode
 $DOCKER_COMPOSE_CMD up -d --build
 
-echo "Expense Tracker is running on http://localhost:$PORT"
 echo "To stop the app, run: $DOCKER_COMPOSE_CMD down"
