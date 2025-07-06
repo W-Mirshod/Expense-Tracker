@@ -44,14 +44,21 @@ body.dark .navbar {
 .theme-toggle {
   background: none;
   border: none;
-  font-size: 1.35rem;
+  font-size: 1.08rem;
   cursor: pointer;
   color: inherit;
   outline: none;
-  margin-left: 1.2rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: 6px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.13rem 0.45rem;
+  border-radius: 50%;
   transition: background 0.18s, color 0.18s;
+  min-width: 32px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
 }
 .theme-toggle:active {
   background: #e6e6e6;
