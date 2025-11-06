@@ -3,8 +3,8 @@ services:
   expense-tracker:
     build: .
     container_name: expense-tracker
-    expose:
-      - "80"
+    ports:
+      - "8084:80"
     networks:
       - web
 
